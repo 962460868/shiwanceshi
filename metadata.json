@@ -1,0 +1,5 @@
+{
+  "name": "AdVerify - 试玩广告测试平台",
+  "description": "专业的试玩广告诊断工具。支持测试深度链接 (Deep Links)、应用商店跳转 (Google Play/App Store)、MRAID 兼容性以及安卓/iOS 环境下的浏览器安全策略。",
+  "requestFramePermissions": []
+}

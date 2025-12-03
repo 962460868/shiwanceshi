@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>AdVerify - 试玩广告沙箱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
+            },
+            colors: {
+              openai: {
+                bg: '#FFFFFF',          // 纯白背景
+                sidebar: '#F7F7F8',     // 浅灰侧边栏
+                card: '#FFFFFF',        // 卡片背景
+                hover: '#ECECF1',       // 悬停态
+                border: '#E5E5E5',      // 边框色
+                text: '#343541',        // 主要文字
+                subtext: '#6B7280',     // 次要文字
+                green: '#10a37f',       // 品牌绿
+                greenHover: '#1a7f64'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        color: #343541;
+        font-family: 'Inter', sans-serif;
+      }
+      .log-scroll::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      .log-scroll::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      .log-scroll::-webkit-scrollbar-thumb {
+        background: #D1D5DB; 
+        border-radius: 4px;
+      }
+      .log-scroll::-webkit-scrollbar-thumb:hover {
+        background: #9CA3AF;
+      }
+      
+      /* Smooth transitions */
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 200ms;
+      }
+      
+      @keyframes pulse-ring {
+        0% { transform: scale(0.33); opacity: 1; }
+        80%, 100% { transform: scale(1); opacity: 0; }
+      }
+      .animate-pulse-ring {
+        animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.7"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
